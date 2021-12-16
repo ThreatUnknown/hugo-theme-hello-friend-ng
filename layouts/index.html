@@ -7,21 +7,30 @@
         <div>
             <h1>
                 {{ if .Site.Params.Portrait.Path }}
+<<<<<<< HEAD
                     <picture>
                         <source srcset="{{ .Site.Params.Portrait.Path }}" media="(prefers-color-scheme:dark)"  style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" class="responsive" id="logo-main">
                         <img src="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" class="responsive" id="logo-main">
                       </picture>
                     {{ end }}
+=======
+                    <img src="{{ .Site.Params.Portrait.Path }}" class="" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+                {{ end }}
+>>>>>>> 37af177 (Update index.html)
             </h1>
             <!--
             <h1>{{ .Site.Title }}</h1>
             {{- with .Site.Params.homeSubtitle }}
                 <p>{{.}}</p>
             {{- end }}
+<<<<<<< HEAD
             --> 
 
              <!--{{ partial "subtitle.html" . }}-->
 
+=======
+            -->
+>>>>>>> 37af177 (Update index.html)
 
             {{- with .Site.Params.social }}
                 <div>
