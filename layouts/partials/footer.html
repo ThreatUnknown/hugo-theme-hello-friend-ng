@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<footer>
-    {{ if .Site.Copyright }}
-        <span class="copyright">
-            {{ replace .Site.Copyright "{year}" now.Year }}
-        </span>
-=======
 <footer class="footer">
     {{if or (.Site.Params.footer.trademark) (.Site.Params.footer.author) (.Site.Params.footer.copyright) (.Site.Params.footer.rss) (.Site.Params.footer.topText) }}
     <div class="footer__inner">
@@ -16,7 +9,6 @@
             {{ range .Site.Params.footer.topText }}<span>{{ . | safeHTML}}</span>{{ end }}
         </div>
     </div>
->>>>>>> eedcde4 (Set static copyright year)
     {{ end }}
     <a href="/privacy">Privacy</a> | <a href="/terms">Terms of Use</a>
 </footer>
