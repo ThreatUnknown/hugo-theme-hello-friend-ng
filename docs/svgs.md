@@ -10,7 +10,10 @@
 - [codechef](https://simpleicons.org/?q=codechef)
 - [codepen](https://simpleicons.org/?q=codepen)
 - [cs:go](https://simpleicons.org/?q=counterstrike)
+<<<<<<< HEAD
 - [cyberdefenders](https://simpleicons.org/?q=cyberdefenders)
+=======
+>>>>>>> 5a098eb (update from upstream)
 - dev
 - [deviantart](https://simpleicons.org/?q=deviantart)
 - [discogs](https://simpleicons.org/?q=discogs)

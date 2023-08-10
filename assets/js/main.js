@@ -28,7 +28,6 @@ function switchTheme(e) {
   var image = document.getElementById("logo-main");
   if (chosenThemeIsDark) {
     localStorage.setItem("theme", "light");
-<<<<<<< HEAD
     image.src = "/img/title.png";
   } else if (chosenThemeIsLight) {
     localStorage.setItem("theme", "dark");
@@ -41,18 +40,6 @@ function switchTheme(e) {
       localStorage.setItem("theme", "dark");
       image.src = "/img/title_dark.png";
     }
-=======
-    if (image) {
-      image.src = "/img/title.png";
-    }
-    
-  } else {
-    localStorage.setItem("theme", "dark");
-    if (image) {
-      image.src = "/img/title_dark.png";
-    }
-    
->>>>>>> a2cda72 ( fix theme toggle on non-main pages)
   }
 
   detectOSColorTheme();
