@@ -28,20 +28,16 @@ function switchTheme(e) {
   var image = document.getElementById("logo-main");
   if (chosenThemeIsDark) {
     localStorage.setItem("theme", "light");
-    if (image) {
-      image.src = "/img/title.png";
-    }
-
+    image.src = "/img/title.png";
   } else if (chosenThemeIsLight) {
     localStorage.setItem("theme", "dark");
+    image.src = "/img/title_dark.png";
   } else {
     if (document.documentElement.getAttribute("data-theme") == "dark") {
       localStorage.setItem("theme", "light");
+      image.src = "/img/title.png";
     } else {
       localStorage.setItem("theme", "dark");
-    }
-
-    if (image) {
       image.src = "/img/title_dark.png";
     }
   }
