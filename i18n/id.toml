@@ -36,13 +36,9 @@ one   = "Satu Kata"
 other = "{{ .Count }} Kata"
 
 [lastModified]
-<<<<<<< HEAD
 other = "Terakhir diupdate"
 
 # partials/pagination-list.html
 [pagination]
 newerPosts = "Postingan yang lebih baru"
 olderPosts = "Postingan yang lebih lama"
-=======
-other = "Terakhir diupdate"
->>>>>>> 5a098eb (update from upstream)
