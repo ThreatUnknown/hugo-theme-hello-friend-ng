@@ -62,9 +62,9 @@ function updatePictureSource() {
   var themePicture = document.getElementById("logo-main");
 
   if (localStorage.getItem("theme") === "dark") {
-    themePicture.srcset = "/img/title_dark.png";
+    themePicture.src = "/img/title_dark.png";
   } else {
-    themePicture.srcset = "/img/title_light.png";
+    themePicture.src = "/img/title_light.png";
   }
 }
 
