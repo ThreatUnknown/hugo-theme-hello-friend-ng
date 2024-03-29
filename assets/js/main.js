@@ -25,20 +25,15 @@ function detectOSColorTheme() {
 
 // Switch the theme.
 function switchTheme(e) {
-  var image = document.getElementById("logo-main");
   if (chosenThemeIsDark) {
     localStorage.setItem("theme", "light");
-    image.src = "/img/title.png";
   } else if (chosenThemeIsLight) {
     localStorage.setItem("theme", "dark");
-    image.src = "/img/title_dark.png";
   } else {
     if (document.documentElement.getAttribute("data-theme") == "dark") {
       localStorage.setItem("theme", "light");
-      image.src = "/img/title.png";
     } else {
       localStorage.setItem("theme", "dark");
-      image.src = "/img/title_dark.png";
     }
   }
 
@@ -60,3 +55,26 @@ if (themeToggle) {
 } else {
   localStorage.removeItem("theme");
 }
+
+
+// Function to update picture source based on the theme
+function updatePictureSource() {
+  var themePicture = document.getElementById("logo-main");
+
+  if (localStorage.getItem("theme") === "dark") {
+    themePicture.srcset = "/img/title_dark.png";
+  } else {
+    themePicture.srcset = "/img/title_light.png";
+  }
+}
+
+// Function to handle theme change event
+function handleThemeChange() {
+  updatePictureSource();
+}
+
+// Add event listener for theme change
+window.addEventListener("storage", handleThemeChange);
+
+// Call updatePictureSource() initiall
+updatePictureSource();
